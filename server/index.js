@@ -11,7 +11,7 @@ const myServer = http.createServer((req,res)=>{
                 res.end("Salam Alaykum I am Monis.")
                 break;
             case '/':
-                res.end("HomePage");
+                res.end("HomePage"); 
                 break;
             default:
                 res.end("404 not found");    
