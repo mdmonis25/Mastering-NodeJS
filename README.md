@@ -25,3 +25,10 @@ File Creation and modification
 ### Video 10:
 >Express {node's framework}, We don't need to use url or http or fs and most dependencies anymore, express will handle most of the things, refer documentation (app.get, app.listen, app = express())
 
+### Video 11:
+>Versioning: Dependecies "xyz":'4.18.2'
+>last Part (2) - Minor fixes (Optional Update)
+>Middle Part (18) - Bug fixes (Recommended Update)
+>First Part (4) - Major/Breaking Update (Do not Update without reading or reviewing)
+> ^ ~ latest etc. refer npmjs for documentation
+
