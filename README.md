@@ -9,3 +9,16 @@
 ### Video 5:
 > File System: The Fs Module
 File Creation and modification
+
+### Video 6:
+>Architecture of nodejs, event queue, event loop, thread pool, blocking 7 non blocking requests
+
+### Video 7:
+>Builing Http server in nodejs, http module, createServer, listening to a port
+
+### Video 8:
+>Handling urls in nodejs, using req.url and switch case for different routes
+
+### Video 9:
+>HTTP Methods - get, post, put, patch, delete
+
