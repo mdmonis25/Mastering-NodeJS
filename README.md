@@ -32,3 +32,6 @@ File Creation and modification
 >First Part (4) - Major/Breaking Update (Do not Update without reading or reviewing)
 > ^ ~ latest etc. refer npmjs for documentation
 
+### Video 12:
+>REST or RESTFUL API, Clinet Server Architecture, Client Server Independent, Respect All HTTP Methods
+>Server Side Rendering is fast but should only be used when you know that data is going to be displayed in a browser.
