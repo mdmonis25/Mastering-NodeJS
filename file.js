@@ -1,6 +1,4 @@
 const fs = require('fs');
-const os = require('os');
-console.log(os.cpus().length)
 
 // For sync
 // fs.writeFileSync('./../hello.txt','Hello NodeJS');
@@ -15,4 +13,3 @@ console.log(os.cpus().length)
 // const contact = fs.readFileSync('./contact.txt', "utf-8");
 // console.log(contact);
 // isme console log hota hai, async wale me callback function ke andar console log hota hai
-
