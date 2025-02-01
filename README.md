@@ -35,3 +35,8 @@ File Creation and modification
 ### Video 12:
 >REST or RESTFUL API, Clinet Server Architecture, Client Server Independent, Respect All HTTP Methods
 >Server Side Rendering is fast but should only be used when you know that data is going to be displayed in a browser.
+
+### Video 13 -- Project 01 REST API:
+>building a RESTFUL API respecting all methods
+>Dynamic Routing through Dynamic Path Parameter
+>We can group different requests on a same route
