@@ -1,8 +1,9 @@
 Building REST API // JSON
 
-GET /api/users -- All users
-GET /api/users/1 -- get user with id 1
-
+GET /api/users -- All users -- Done
+GET /api/users/1 -- get user with id 1 -- Done
+using dynamic path parameter for dynamic routing
+/api/users/:id
 POST /api/users -- create new user
 
 PATCH /api/users/1 -- Edit user with id 1
