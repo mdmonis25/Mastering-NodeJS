@@ -40,3 +40,6 @@ File Creation and modification
 >building a RESTFUL API respecting all methods
 >Dynamic Routing through Dynamic Path Parameter
 >We can group different requests on a same route
+
+### Video 14 -- Post Man:
+>Using postman because you cannot use patch,deleete etc. from browser

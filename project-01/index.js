@@ -7,6 +7,15 @@ const PORT = 8000;
 
 //Middleware - plugins in express
 app.use(express.urlencoded({ extended: false }));
+app.use((req,res,next)=>{
+  console.log("Middle Ware 1");
+  next();
+})
+app.use((req,res,next)=>{
+  console.log("Middle Ware 2");
+  // return res.status(786).json({mid:"middleware"})
+  next();
+})
 
 //Routes
 app.get("/users", (req, res) => {
@@ -37,13 +46,15 @@ app
     const body = req.body;
     users.push({id:users.length+1,...body})
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users),(err,data)=>{
-      return res.send(`User with id = ${users.length} added`);
+      return res.send(`User with id = ${users.length} added`); 
     })
   })
   .delete((req, res) => {
     const id = Number(req.params.id);
     const user = users.find((user) => user.id === id);
-    fs.unlink("./MOCK_DATA.json",JSON.stringify(users),())
+    fs.unlink("./MOCK_DATA.json",JSON.stringify(user),(err,data)=>{
+      return res.send(`User with id = ${id} deleted`)
+    })
     return res.json({ status: "pending" });
   });
 
