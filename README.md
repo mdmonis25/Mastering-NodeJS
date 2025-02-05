@@ -46,7 +46,19 @@ File Creation and modification
 
 ### Video 15 -- Express Middlewares:
 >Our request goes to middleware before it's destined route. Midddlewares have the power to reject or change or return response.
->Hacker, Data Proection etc.
+>Hacker, Data Proection etc. ( Refer Documentation)
 
-### Video 14 -- Post Man:
->Using postman because you cannot use patch,deleete etc. from browser
+### Video 16 -- Headers:
+>Http headers store metadata about req and res, they contain request content type, response type, who is sending requests to whom etc.
+> we can also send a custom header, it is recommended to start it's name with X.
+
+### Video 17 -- Status Codes:
+>Various codes have various purposes
+>1xx is for informational purposes
+>2xx is for success
+>3xx is for redirections
+>4xx is for client errors
+>5xx is for server errors
+>Refer MDN Docs for detailed information
+
+
