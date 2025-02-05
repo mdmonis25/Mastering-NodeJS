@@ -29,6 +29,7 @@ app.get("/users", (req, res) => {
 
 //REST API
 app.get("/api/users", (req, res) => {
+  res.setHeader("X-MyName","Monis")
   return res.json(users);
 });
 
