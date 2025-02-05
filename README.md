@@ -44,7 +44,9 @@ File Creation and modification
 ### Video 14 -- Post Man:
 >Using postman because you cannot use patch,deleete etc. from browser
 
-### Video 15 -- Post Man:
->Using postman because you cannot use patch,deleete etc. from browser
+### Video 15 -- Express Middlewares:
+>Our request goes to middleware before it's destined route. Midddlewares have the power to reject or change or return response.
+>Hacker, Data Proection etc.
+
 ### Video 14 -- Post Man:
 >Using postman because you cannot use patch,deleete etc. from browser
