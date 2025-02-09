@@ -35,10 +35,18 @@ app.get("/api/users", (req, res) => {
 
 app.post("/api/users", (req, res) => {
   const body = req.body;
+  if (
+    !body ||
+    !body.first_name ||
+    !body.last_name ||
+    !body.email ||
+    !body.gender ||
+    !body.job_designation
+  ) return res.status(400).json({message : "All fields Are Required"})
   let newId = users[users.length - 1].id + 1;
   users.push({ id: newId, ...body });
   fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
-    return res.send(`User with id = ${newId} added`);
+    return res.status(201).send(`User with id = ${newId} added`);
   });
 });
 
