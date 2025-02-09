@@ -52,11 +52,11 @@ app
   })
   .delete((req, res) => {
     const id = Number(req.params.id);
-    const user = users.find((user) => user.id === id);
-    fs.unlink("./MOCK_DATA.json",JSON.stringify(user),(err,data)=>{
+    if(!(users.find(item => item.id === id))) return res.send(`User with id = ${id} not found`);
+    const user = users.filter((user) => user.id !== id);
+    fs.writeFile("./MOCK_DATA.json",JSON.stringify(user),(err,data)=>{
       return res.send(`User with id = ${id} deleted`)
     })
-    return res.json({ status: "pending" });
   });
 
 
