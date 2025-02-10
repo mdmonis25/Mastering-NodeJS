@@ -83,4 +83,24 @@ app.post("/api/users", async (req, res) => {
   return res.status(201).json({ message: "Success" });
 });
 
+app
+  .route("/api/users/:id")
+  .get(async (req, res) => {
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(400).json({ message: "user not found" });
+    return res.json(user);
+  })
+  .patch(async (req, res) => {
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(400).json({ message: "user not found" });
+    await User.findByIdAndUpdate(req.params.id, { lastName: "Masoodi" });
+    return res.json({ status: "Success" });
+  })
+  .delete(async (req, res) => {
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(400).json({ message: "user not found" });
+    await User.findByIdAndDelete(req.params.id);
+    return res.json({message:"Deleted"})
+  });
+
 app.listen(PORT, () => `Server Started at port ${PORT}`);
