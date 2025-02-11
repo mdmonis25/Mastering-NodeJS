@@ -61,4 +61,10 @@ File Creation and modification
 >5xx is for server errors
 >Refer MDN Docs for detailed information
 
+### Video 18 -- MongoDB & Mongoshell Installation:
+>Install MongoDB Communiuty Edition & shell
+>No SQL document based database
+>Strong Support for Aggregation Pipes
+>Works on BSON Applications
+
 
